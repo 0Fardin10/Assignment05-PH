@@ -1,46 +1,4 @@
-// export default function Footer() {
-//   return (
-//     <footer className="bg-white border-t border-slate-200 mt-12 py-12 px-6">
-//       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 text-xs">
-//         <div className="col-span-2">
-          
-//           {/* DevStack Logo */}
-//           <div className="mb-4">
-//             <img 
-//               src="/logos/logo-text.png" 
-//               alt="DevStack Logo" 
-//               className="h-7 object-contain cursor-pointer opacity-90 hover:opacity-100 transition-opacity" 
-//             />
-//           </div>
-          
-//           <p className="text-slate-400 max-w-sm leading-relaxed">
-//             Compare options, explore technologies, and pair together the perfect developer stack for your next web application.
-//           </p>
-//         </div>
-//         <div>
-//           <h4 className="font-bold text-slate-900 mb-3 uppercase tracking-wider text-[10px]">Product</h4>
-//           <ul className="space-y-2 text-slate-500">
-//             <li><a href="#" className="hover:text-pink-600">Home</a></li>
-//             <li><a href="#" className="hover:text-pink-600">Technologies</a></li>
-//           </ul>
-//         </div>
-//         <div>
-//           <h4 className="font-bold text-slate-900 mb-3 uppercase tracking-wider text-[10px]">Support</h4>
-//           <ul className="space-y-2 text-slate-500">
-//             <li><a href="#" className="hover:text-pink-600">About</a></li>
-//             <li><a href="#" className="hover:text-pink-600">Docs</a></li>
-//           </ul>
-//         </div>
-//         <div>
-//           <h4 className="font-bold text-slate-900 mb-3 uppercase tracking-wider text-[10px]">Legal</h4>
-//           <ul className="space-y-2 text-slate-500">
-//             <li><a href="#" className="hover:text-pink-600">Privacy Policy</a></li>
-//           </ul>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// }
+
 export default function Footer() {
   return (
     <footer className="bg-[#f8f9fa] border-t border-slate-200 pt-16 pb-8 mt-12 font-sans">

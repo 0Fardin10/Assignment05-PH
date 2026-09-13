@@ -26,17 +26,15 @@ export default function App() {
   const [stack, setStack] = useState([]);
 
   const handleAdd = (tech) => {
-    // চেক করা হচ্ছে এটি আগে থেকে স্ট্যাকে আছে কি না
+  
     const isAlreadyAdded = stack.some((item) => item.name === tech.name);
-    
-    // বারবার অ্যাড করার জন্য ইউনিক আইডি তৈরি
+   
     const newItem = { ...tech, id: `${tech.id}-${Date.now()}` };
     
-    // আইটেমটি স্ট্যাকে যোগ করা হচ্ছে (প্রথমবার হোক বা দ্বিতীয়বার)
     setStack((prevStack) => [...prevStack, newItem]);
     
     if (isAlreadyAdded) {
-      // দ্বিতীয়বার অ্যাড করলে অ্যালার্ট টোস্ট
+     
       toast(`${tech.name} added again!`, {
         icon: '⚠️',
         style: {
@@ -49,7 +47,7 @@ export default function App() {
         },
       });
     } else {
-      // প্রথমবার অ্যাড করলে সাকসেস টোস্ট
+      
       toast.success(`${tech.name} added to stack!`, {
         style: {
           borderRadius: '10px',
@@ -110,7 +108,7 @@ export default function App() {
         </div>
         <div className="grid lg:grid-cols-4 gap-8">
           <div className="lg:col-span-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* isAdded প্রপসটি বাদ দেওয়া হলো যাতে বাটনটি সবসময় ক্লিকেবল থাকে */}
+            {/* isAdded  */}
             {techData.map((tech) => (
               <TechCard
                 key={tech.id}
